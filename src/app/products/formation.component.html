@@ -1,0 +1,89 @@
+<section class="bg-gray-100">
+    <nav class="max-w-7xl mx-auto relative z-50 md:flex justify-between items-center py-4">
+        <img src="../../assets/images/logo.png" alt="" class="w-24">
+        <ul class="flex items-center text-blue-800 font-normal">
+            <li class="mr-1">
+                
+                <span class="block px-3 py-2 rounded-lg hover:bg-blue-200 text-center" routerLink="/">
+                    
+                    <span class="block">Acceuil</span>
+                </span>
+            </li>
+            <li class="mr-1">
+                <span class="block px-3 py-2 rounded-lg bg-blue-200 text-center" routerLink="/formation">
+                    <ion-icon name="bulb-outline" class="text-blue-800 text-2xl"></ion-icon>
+                    <span class="block">Nos produits</span>
+                </span>
+            </li>
+            <li class="mr-1">
+                <span class="block px-3 py-2 rounded-lg hover:bg-blue-200 text-center" routerLink="/a-propos">
+                    
+                    <span class="block"> A propos</span>
+                </span>
+            </li>
+           
+            <li class="mr-1">
+                <span class="block px-3 py-2 rounded-lg bg-purple-500 text-center text-white" routerLink="/inscription">
+                    
+                    <span class="block">Inscription</span>
+                </span>
+            </li>
+            <li>
+                <span class="block px-3 py-2 rounded-lg bg-purple-500 text-center text-white" routerLink="/connexion">
+                    
+                    <span class="block">Connexion</span>
+                </span>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="py-24 relative z-50 px-24">
+
+        <div class="flex">
+            <!-- <div class="mr-10 w-64 h-96 bg-white shadow-2xl rounded-2xl p-8">
+                <span class="block text-center text-xl mb-8">Categories</span>
+                <ul>
+                    <li class="py-3 bg-indigo-500 my-2 rounded text-center text-white">
+                        sac a main
+                    </li>
+                    <li class="py-3 bg-gray-100 my-2 rounded text-center">
+                        Cat2
+                    </li>
+                    <li class="py-3 bg-gray-100 my-2 rounded text-center">
+                        Cat3
+                    </li>
+                    <li class="py-3 bg-gray-100 my-2 rounded text-center">
+                        Cat4
+                    </li>
+                </ul>
+            </div> -->
+            <div class="flex-1">
+
+                <span class="block text-center text-7xl mb-8">Sac a main</span>
+         
+                <div class="grid grid-cols-4 gap-8">
+                     <div *ngFor="let p of products" class="w-full bg-white shadow-md rounded p-4">
+                         <img src="../../assets/images/sac.png" alt="" class="w-full mb-4">
+                         <span class="mb-4 block text-lg text-black">{{ p.libelle }}</span>
+                         <p class="tracking-wide leading-loose text-xs text-gray-500 mb-8">
+                            {{p.description}}
+                         </p>
+                         <div class="flex items-center justify-between">
+                             <span class="block text-lg text-black">21 juillet 2021</span>
+                             <span class="block text-lg text-black">{{ p.prix }} TND</span>
+                         </div>
+                     </div>
+                     
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center py-4">
+        <p class="tracking-wider leading-loose text-sm text-gray-800">
+            Tous Droit Réservee 2021-2020
+        </p>
+    </div>
+</section>
+

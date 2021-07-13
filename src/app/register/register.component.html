@@ -1,0 +1,161 @@
+<div
+  class="
+    fixed
+    z-50
+    bg-gray-800 bg-opacity-40
+    w-full
+    h-screen
+    flex
+    items-center
+    justify-center
+  "
+>
+  <div class="bg-white shadow-2xl p-6 rounded-2xl">
+    <h1 class="text-center text-black text-xl tracking-wider py-4">
+      Inscription
+    </h1>
+    <form (submit)="registerUser()" role="form">
+    
+
+    <div class="mb-4 w-64">
+      <label for="firstName" class="block mb-1">
+        Nom
+        <span class="text-red-500">*</span>
+      </label>
+      <input
+      [(ngModel)]="firstName"
+      name="firstName"
+        placeholder="Nom"
+        required
+        type="text"
+        class="
+          bg-gray-100
+          border border-blue-300
+          py-2
+          px-2
+          focus:outline-none
+          rounded
+          w-full
+          block
+        "
+        id="firstName"
+        autoComplete="off"
+        value=""
+      />
+    </div>
+    <div class="mb-4 w-64">
+      <label for="firstName" class="block mb-1">
+        Prénom
+        <span class="text-red-500">*</span>
+      </label>
+      <input
+      [(ngModel)]="lastName"
+      name="lastName"
+        placeholder="Prénom"
+        required
+        type="text"
+        class="
+          bg-gray-100
+          border border-blue-300
+          py-2
+          px-2
+          focus:outline-none
+          rounded
+          w-full
+          block
+        "
+        id="lastName"
+        autoComplete="off"
+        value=""
+      />
+    </div>
+    <div class="mb-4 w-64">
+      <label for="firstName" class="block mb-1">
+        Télephone
+        <span class="text-red-500">*</span>
+      </label>
+      <input
+      [(ngModel)]="phone"
+      name="phone"
+        placeholder="Télephone"
+        required
+        type="text"
+        class="
+          bg-gray-100
+          border border-blue-300
+          py-2
+          px-2
+          focus:outline-none
+          rounded
+          w-full
+          block
+        "
+        id="phone"
+        autoComplete="off"
+        value=""
+      />
+    </div>
+
+    <div class="mb-4 w-64">
+      <label for="firstName" class="block mb-1">
+        Email
+        <span class="text-red-500">*</span>
+      </label>
+      <input
+      [(ngModel)]="email"
+      name="email"
+        placeholder="email"
+        required
+        type="text"
+        class="
+          bg-gray-100
+          border border-blue-300
+          py-2
+          px-2
+          focus:outline-none
+          rounded
+          w-full
+          block
+        "
+        id="email"
+        autoComplete="off"
+        value=""
+      />
+    </div>
+
+    <div class="mb-4 w-64">
+      <label for="firstName" class="block mb-1">
+        Mot de passe
+        <span class="text-red-500">*</span>
+      </label>
+      <input
+      [(ngModel)]="password"
+      name="password"
+        placeholder="Mot de passe"
+        required
+        type="password"
+        class="
+          bg-gray-100
+          border border-blue-300
+          py-2
+          px-2
+          focus:outline-none
+          rounded
+          w-full
+          block
+        "
+        id="password"
+        autoComplete="off"
+        value=""
+      />
+    </div>
+    
+
+
+      <button type="submit" class="w-64 py-3 bg-red-400 rounded text-white mb-8">Inscription</button> <br>
+      <div class="w-64 py-3 bg-purple-500 rounded text-white" routerLink="/connexion">
+        Connexion
+      </div>
+    </form>
+  </div>
+</div>
